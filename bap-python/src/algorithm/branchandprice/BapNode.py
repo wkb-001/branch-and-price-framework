@@ -7,6 +7,7 @@
 # **********************************************************
 from src.algorithm.branchandprice.PricingProblem import PricingProblem
 from src.algorithm.branchandprice.RestrictedMasterProblem import RestrictedMasterProblem
+from src.utils.Util import Solution
 
 
 class BapNode:
@@ -14,16 +15,16 @@ class BapNode:
     """ BapNode class for branch-and-bound procedure in Branch-and-Price algorithm. """
 
     def __init__(self):
-        self.is_integral = False
-        self.iteration = 0
-        self.node_obj = float('inf')
-        self.solution = None
-        self.is_LP_feasible = True
-        self.parent = None
-        self.branch_arc = None
-        self.node_id = 1
-        self.dist_map = None
-        self.infeasible_path_indices = None
+        self.is_integral: bool = False
+        self.iteration: int = 0
+        self.node_obj: float = float('inf')
+        self.solution: Solution = None
+        self.is_LP_feasible: bool = True
+        self.parent: BapNode = None
+        self.branch_arc: tuple = None
+        self.node_id: int = 1
+        self.dist_map: dict = None
+        self.infeasible_path_indices: list = None
 
     def __lt__(self, other):
         pass
@@ -39,7 +40,7 @@ class BapNode:
 
     def _update_feasible_path(self, rmp: RestrictedMasterProblem) -> None:
         """
-        Update the feasible path set in rmp after branching.
+        Update the feasible path indices in rmp after branching.
 
         :param rmp: restricted master problem
         """
@@ -47,12 +48,4 @@ class BapNode:
 
     def _resolve_graph(self) -> None:
         """ Resolve distance map on graph after branching. """
-        pass
-
-    def _get_history_branch_arcs(self) -> list:
-        """
-        Get history branch arcs list.
-
-        :return: branching history list
-        """
         pass

@@ -69,6 +69,7 @@ class PricingAlgorithmInterface(metaclass=ABCMeta):
 
     @abstractmethod
     def _revise_cost_map(self, dist_map: dict, dual_val: list):
+        """ Revise cost map in the Column Generation Process. """
         pass
 
     @abstractmethod

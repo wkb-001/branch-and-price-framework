@@ -15,17 +15,19 @@ from src.algorithm.branchandprice.RestrictedMasterProblem import RestrictedMaste
 class BranchAndPrice:
 
     def __init__(self, silent=True):
-        self.silent = silent
-        self.opt_flag = False
+        self.silent: bool = silent
+        self.opt_flag: bool = False
         self._rmp: RestrictedMasterProblem = None
         self._sp: PricingProblem = None
         # solution information
-        self.node_explored = 0
-        self.total_cg_iteration = 0
+        self.node_explored: int = 0
+        self.total_cg_iteration: int = 0
         self._best_node: BapNode = None
-        self.mip_search_gap = 0
-        self.cpu_time = 0
-        self.lb, self.ub, self.root_relaxation_val = 0, float('inf'), 0
+        self.mip_search_gap: float = 0
+        self.cpu_time: float = 0
+        self.lb: float = 0
+        self.ub: float = float('inf')
+        self.root_relaxation_val: float = 0
         self._queue = PriorityQueue()
         self._solution_pool = PriorityQueue()
 
