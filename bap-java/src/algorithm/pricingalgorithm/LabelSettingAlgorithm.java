@@ -1,2 +1,16 @@
-package algorithm.pricingalgorithm;public class LabelSettingAlgorithm {
+package algorithm.pricingalgorithm;
+
+import utils.PricingAlgorithm;
+
+import java.util.List;
+import java.util.Map;
+
+public abstract class LabelSettingAlgorithm implements PricingAlgorithm {
+
+    @Override
+    public abstract void reviseCostMap(Map<Record, Double> distMap, List<Double> dualVal);
+
+    @Override
+    public abstract void solve(Map<Record, Double> distMap, List<Double> dualVal);
+
 }

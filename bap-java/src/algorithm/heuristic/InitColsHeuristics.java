@@ -1,2 +1,4 @@
-package algorithm.heuristic;public class InitColsHeuristics {
+package algorithm.heuristic;
+
+public class InitColsHeuristics {
 }

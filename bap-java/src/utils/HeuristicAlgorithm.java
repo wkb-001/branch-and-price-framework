@@ -1,2 +1,9 @@
-package utils;public interface HeuristicAlgorithm {
+package utils;
+
+public interface HeuristicAlgorithm {
+
+    /**
+     * Search for heuristic solutions.
+     */
+    void search();
 }

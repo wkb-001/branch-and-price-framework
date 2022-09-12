@@ -1,2 +1,5 @@
-package utils;public class Util {
+package utils;
+
+public class Util {
+
 }
