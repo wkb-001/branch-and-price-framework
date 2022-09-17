@@ -1,10 +1,10 @@
 #pragma once
 
-class solution {
+class Solution {
 private:
     double objective_val;
     
 public:
-    solution(/* args */);
-    ~solution();
+    Solution(/* args */);
+    ~Solution();
 };

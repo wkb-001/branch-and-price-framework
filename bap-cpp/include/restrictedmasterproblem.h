@@ -1,7 +1,7 @@
 #pragma once
 #include "gurobi_c++.h"
-#include "problemcolumn.hpp"
-#include "solution.hpp"
+#include "problemcolumn.h"
+#include "solution.h"
 #include <vector>
 using namespace std;
 

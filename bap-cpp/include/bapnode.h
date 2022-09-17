@@ -1,8 +1,8 @@
 #pragma once
 
-#include "solution.hpp"
-#include "restrictedmasterproblem.hpp"
-#include "pricingproblem.hpp"
+#include "solution.h"
+#include "restrictedmasterproblem.h"
+#include "pricingproblem.h"
 #include <tuple>
 #include <unordered_map>
 #include <vector>
@@ -19,7 +19,7 @@ public:
     double node_obj;
     Solution solution;
     bool is_LP_feasible;
-    BapNode parent;
+    BapNode *parent;
     tuple<int, int> branch_arc;
     int node_id;
     unordered_map<tuple<int, int>, double> dist_map;

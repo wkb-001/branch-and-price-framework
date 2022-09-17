@@ -1,8 +1,8 @@
 #pragma once
 
-#include "restrictedmasterproblem.hpp"
-#include "pricingproblem.hpp"
-#include "bapnode.hpp"
+#include "restrictedmasterproblem.h"
+#include "pricingproblem.h"
+#include "bapnode.h"
 #include <queue>
 using namespace std;
 

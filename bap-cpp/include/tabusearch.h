@@ -1,11 +1,11 @@
 #pragma once
 
-class tabusearch
+class Tabusearch
 {
 private:
     /* data */
 public:
-    tabusearch(/* args */);
-    ~tabusearch();
+    Tabusearch(/* args */);
+    ~Tabusearch();
     void search();
 };

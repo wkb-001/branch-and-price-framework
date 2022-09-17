@@ -1,12 +1,12 @@
 #pragma once
 
-class pulsealgorithm {
+class PulseAlgorithm {
 private:
     void revise_cost_map();
 
 public:
-    pulsealgorithm(/* args */);
-    ~pulsealgorithm();
+    PulseAlgorithm(/* args */);
+    ~PulseAlgorithm();
     void solve();
 };
 

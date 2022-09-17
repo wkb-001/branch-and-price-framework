@@ -1,14 +1,14 @@
 #pragma once;
-#include <problemcolumn.hpp>
+#include <problemcolumn.h>
 
 
-class pricingproblem {
+class PricingProblem {
 private:
     ProblemColumn shortest_path;
     double reduced_cost;
 
 public:
-    pricingproblem(/* args */);
-    ~pricingproblem();
+    PricingProblem(/* args */);
+    ~PricingProblem();
     void solve();
 };
